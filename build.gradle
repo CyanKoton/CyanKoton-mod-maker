@@ -1,0 +1,85 @@
+//------------------------------------------------------------------------------
+
+plugins {
+    id 'java-library'
+    id 'java'
+    id 'idea'
+    id 'com.github.johnrengelman.shadow' version '7.0.0'
+}
+
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+
+//version "Alpha-0.1.0-SNAPSHOT"
+version = "0.1.0-Alpha"
+group = "io.github.lightstudio.light"
+archivesBaseName = "Light"
+
+compileJava.options.encoding = 'UTF-8'
+compileTestJava.options.encoding = 'UTF-8'
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+
+
+// 这将此任务创建一个.jar文件，其中包含此 MOD 的源代码
+task sourcesJar(type: Jar, dependsOn: classes) {
+    classifier = "sources"
+    from sourceSets.main.allSource
+}
+
+// 这将此任务将创建一个.jar文件，其中包含此mod的已取消订阅版本，供其他开发人员在开发环境中使用。
+task devJar(type: Jar) {
+    classifier = "dev"
+    from sourceSets.main.output
+}
+
+// 在构建 JAR 时候，创建列出的工件
+artifacts {
+    archives sourcesJar
+    archives devJar
+}
+
+//------------------------------------------------------------------------------
+repositories {
+    mavenCentral()
+    // 借用 阿里云 存储库，那是国内存储库, central 仓库 和 jcenter 仓库 合并的
+    maven {
+        name = "aliyun"
+        url "https://maven.aliyun.com/repository/public/"
+    }
+}
+
+dependencies {
+
+    // log4j 日志
+    implementation("org.apache.logging.log4j:log4j-core:2.14.1")
+    // json - gson-Google-JSON
+    implementation("com.google.code.gson:gson:2.8.8")
+    // FlatLaf - 扁平化的外观和感觉
+    implementation("com.formdev:flatlaf:1.5")
+    implementation("com.formdev:flatlaf-intellij-themes:1.5")
+
+    implementation("org.slick2d:slick2d-core:1.0.2")
+    // implementation 'com.jtattoo:JTattoo:1.6.11'
+
+
+}
+
+
+shadowJar {
+    dependencies {
+        // include(dependency("org.apache.logging.log4j:log4j-core:2.14.1"))
+        include(dependency("com.google.code.gson:gson:2.8.8"))
+        include(dependency("com.formdev:flatlaf:1.5"))
+        include(dependency("com.formdev:flatlaf-intellij-themes:1.5"))
+    }
+    manifest {
+        attributes(
+                'Main-Class': 'io.github.lightstudio.light.Gdkg'
+        )
+    }
+}
