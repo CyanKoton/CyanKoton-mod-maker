@@ -13,14 +13,6 @@ import java.util.List;
 
 public class StartProjectPanelGUI extends Panel {
 
-
-
-
-
-
-
-
-
     public void init() {
 
     }

@@ -1,6 +1,7 @@
 package io.github.mangostudio.mango;
 
 import com.formdev.flatlaf.intellijthemes.FlatArcDarkOrangeIJTheme;
+import io.github.mangostudio.mango.gui.LanguageGUI;
 import io.github.mangostudio.mango.gui.StartProjectPanelGUI;
 import io.github.mangostudio.mango.project.Project;
 import io.github.mangostudio.mango.project.ProjectTableModel;
@@ -10,6 +11,8 @@ import io.github.mangostudio.mango.util.Language;
 import javax.swing.*;
 import javax.swing.table.TableColumn;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.util.ArrayList;
@@ -20,6 +23,9 @@ import static com.sun.java.accessibility.util.AWTEventMonitor.addWindowListener;
 public class MangoModMakerClient {
 
     private JFrame FRAME;   //窗口框架
+
+
+    // LanguageGUI
 
     // 启动项目面板--------------------------------------------------
     private JPanel ProjectFormPanel;            //项目表单面板
@@ -157,6 +163,33 @@ public class MangoModMakerClient {
         FRAME.add(ProjectFormPanel, BorderLayout.CENTER);
         FRAME.add(ProjectButtonPanel, BorderLayout.EAST);
 
+
+        MultiLingualButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+
+                LanguageGUI dialog = new LanguageGUI();
+
+                dialog.showLanguageDialog(FRAME, FRAME);
+
+
+                //  dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
+                //  dialog.setVisible(true);
+
+
+                //JOptionPane.showMessageDialog(null, "你好，世界", "信息...", JOptionPane.INFORMATION_MESSAGE);
+            }
+        });
+
+
+        SetupButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                LanguageGUI lo = new LanguageGUI();
+                JOptionPane.showMessageDialog(null, "你好，世界", "信息...", JOptionPane.INFORMATION_MESSAGE);
+            }
+        });
 
     }
 
