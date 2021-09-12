@@ -11,7 +11,7 @@
 /classes
 *.iml
 *.ipr
-
+/out
 
 #gradle
 /build
