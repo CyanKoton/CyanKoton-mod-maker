@@ -5,6 +5,7 @@ import io.github.mangostudio.mango.project.Project;
 import io.github.mangostudio.mango.project.ProjectTableModel;
 import io.github.mangostudio.mango.project.TableImageCell;
 import io.github.mangostudio.mango.util.Language;
+import io.github.mangostudio.mango.util.WebUrl;
 
 import javax.swing.*;
 import javax.swing.table.TableColumn;

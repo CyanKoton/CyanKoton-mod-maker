@@ -1,4 +1,4 @@
-package io.github.mangostudio.mango;
+package io.github.mangostudio.mango.util;
 
 import java.awt.*;
 import java.io.IOException;
