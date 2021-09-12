@@ -2,7 +2,7 @@
 芒果！这是芒果模组制作器支持跨平台、美化好、速度快、插件
 
 
-[![star](https://gitee.com/mango-studio/mango-mod-maker/badge/license.svg?theme=dark)](https://gitee.com/mango-studio/mango-mod-maker/blob/master/LICENSE)
+[![license](https://gitee.com/mango-studio/mango-mod-maker/badge/license.svg?theme=dark)](https://gitee.com/mango-studio/mango-mod-maker/blob/main/LICENSE)
 [![star](https://gitee.com/mango-studio/mango-mod-maker/badge/star.svg?theme=dark)](https://gitee.com/mango-studio/mango-mod-maker/stargazers)
 [![fork](https://gitee.com/mango-studio/mango-mod-maker/badge/fork.svg?theme=dark)](https://gitee.com/mango-studio/mango-mod-maker/members)
 [![Fork me on Gitee](https://gitee.com/mango-studio/mango-mod-maker/widgets/widget_5.svg)](https://gitee.com/mango-studio/mango-mod-maker)
