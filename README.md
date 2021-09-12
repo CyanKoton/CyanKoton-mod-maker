@@ -6,4 +6,9 @@
 [![fork](https://gitee.com/mango-studio/mango-mod-maker/badge/fork.svg?theme=dark)](https://gitee.com/mango-studio/mango-mod-maker/members)
 [![Fork me on Gitee](https://gitee.com/mango-studio/mango-mod-maker/widgets/widget_5.svg)](https://gitee.com/mango-studio/mango-mod-maker)
 
+![](https://img.shields.io/github/stars/mango-studio/mango-mod-maker)
+![](https://img.shields.io/github/fork/mango-studio/mango-mod-maker)
+
+
+
 [![Mango Studio/MangoModMaker](https://gitee.com/mango-studio/mango-mod-maker/widgets/widget_card.svg?colors=4183c4,ffffff,ffffff,e3e9ed,666666,9b9b9b)](https://gitee.com/mango-studio/mango-mod-maker)
