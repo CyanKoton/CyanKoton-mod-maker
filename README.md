@@ -8,9 +8,6 @@
 
 
 ![stars](https://img.shields.io/github/stars/mango-studio/mango-mod-maker.svg?colorB=f48041&style=flat-square)
-
-![fork](https://img.shields.io/github/fork/mango-studio/mango-mod-maker.svg?colorB=f48041&style=flat-square)
-
 [![License](https://img.shields.io/github/license/mango-studio/mango-mod-maker.svg?colorB=f48041&style=flat-square)](https://github.com/mango-studio/mango-mod-maker/blob/main/LICENSE)
 
 
