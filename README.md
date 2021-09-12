@@ -7,10 +7,10 @@
 [![Fork me on Gitee](https://gitee.com/mango-studio/mango-mod-maker/widgets/widget_5.svg)](https://gitee.com/mango-studio/mango-mod-maker)
 
 
-![stars](https://img.shields.io/github/stars/mango-studio/mango-mod-maker)
-
-
 ![License](https://img.shields.io/github/stars/mango-studio/mango-mod-maker.svg?colorB=f48041&style=flat-square)
+
+
+![License](https://img.shields.io/github/fork/mango-studio/mango-mod-maker.svg?colorB=f48041&style=flat-square)
 
 [![License](https://img.shields.io/github/license/mango-studio/mango-mod-maker.svg?colorB=f48041&style=flat-square)](https://github.com/mango-studio/mango-mod-maker/blob/master/LICENSE)
 
