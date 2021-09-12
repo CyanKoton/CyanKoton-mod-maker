@@ -1,5 +1,5 @@
 # mango-mod-maker
-芒果！一款芒果模组制作器，采用java语言开发。支持跨平台、界面漂亮、速度快、插件
+芒果！一款芒果模组制作器，采用java语言开发。支持跨平台、JavaFx界面漂亮、速度快、插件
 
 [![star](https://gitee.com/mango-studio/mango-mod-maker/badge/star.svg?theme=dark)](https://gitee.com/mango-studio/mango-mod-maker/stargazers)
 [![fork](https://gitee.com/mango-studio/mango-mod-maker/badge/fork.svg?theme=dark)](https://gitee.com/mango-studio/mango-mod-maker/members)
