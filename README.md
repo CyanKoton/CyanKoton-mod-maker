@@ -1,5 +1,7 @@
 # mango-mod-maker
-芒果！这是芒果模组制作器支持跨平台、美化好、速度快、插件
+芒果！芒果模组制作器支持跨平台、美化还行、速度快、插件
+
+
 
 
 [![star](https://gitee.com/mango-studio/mango-mod-maker/badge/star.svg?theme=dark)](https://gitee.com/mango-studio/mango-mod-maker/stargazers)
