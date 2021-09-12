@@ -1,17 +1,11 @@
 title.name=芒果模组制作器
 
-
-
-
 button.new_project=新建项目
 button.open_import_project=打开导入项目
 button.sponsor=赞助
 button.update_log=更新日志
 button.multi_lingual=语言
 button.setup=设置
-
-
-
 
 prompt_message=提示信息
 information=信息

@@ -24,11 +24,21 @@ public class ProjectTableModel extends AbstractTableModel {
         return aps.size();
     }
 
+
     public Object getValueAt(int rowIndex, int columnIndex) {
         Object res = "";
         Project ap = aps.get(rowIndex);
+
+        //ImageIcon ii = new ImageIcon(ap.getProjectLogo());
+        // .read
+        //ImageIcon ii = new ImageIcon(ProjectTableModel.class.getResourceAsStream(""));
+        // Images.class.getResourceAsStream(imageName)
+        //ap.getProjectLogo();//new ImageIcon(ap.getProjectLogo());
+
+
         ImageIcon ii = new ImageIcon(ap.getProjectLogo());
         ii.setImage(ii.getImage().getScaledInstance(64, 64, Image.SCALE_DEFAULT));
+
         switch (columnIndex) {
             case 0:
                 res = ii;

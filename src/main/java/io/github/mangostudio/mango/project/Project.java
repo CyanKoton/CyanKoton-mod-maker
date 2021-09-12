@@ -1,5 +1,8 @@
 package io.github.mangostudio.mango.project;
 
+import java.awt.*;
+import java.awt.image.BufferedImage;
+
 public class Project {
 
     private String project_num;     //数字

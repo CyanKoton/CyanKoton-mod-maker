@@ -1,8 +1,6 @@
 package io.github.mangostudio.mango;
 
-import com.formdev.flatlaf.intellijthemes.FlatArcDarkOrangeIJTheme;
 import io.github.mangostudio.mango.gui.LanguageGUI;
-import io.github.mangostudio.mango.gui.StartProjectPanelGUI;
 import io.github.mangostudio.mango.project.Project;
 import io.github.mangostudio.mango.project.ProjectTableModel;
 import io.github.mangostudio.mango.project.TableImageCell;
@@ -22,7 +20,11 @@ import static com.sun.java.accessibility.util.AWTEventMonitor.addWindowListener;
 
 public class MangoModMakerClient {
 
-    private JFrame FRAME;   //窗口框架
+    private static JFrame FRAME;   //窗口框架
+
+    // 配置文件:
+    public static int LanguageInt = 0;
+    public static String LanguageString = "zh_cn";
 
 
     // LanguageGUI
@@ -32,14 +34,14 @@ public class MangoModMakerClient {
     private JPanel ProjectButtonPanel;          //项目按钮面板
     private JPanel ProjectButtonPanel1;         //项目按钮面板 1
 
-    private JButton NewProjectButton;           //新建项目按钮
-    private JButton OpenImportProjectButton;    //打开导入项目按钮
-    private JButton SponsorButton;              //赞助商按钮
-    private JButton LogButton;                  //日志按钮
-    private JButton MultiLingualButton;         //多语言按钮
-    private JButton SetupButton;                //设置按钮
+    private static JButton NewProjectButton;           //新建项目按钮
+    private static JButton OpenImportProjectButton;    //打开导入项目按钮
+    private static JButton SponsorButton;              //赞助商按钮
+    private static JButton LogButton;                  //日志按钮
+    private static JButton MultiLingualButton;         //多语言按钮
+    private static JButton SetupButton;                //设置按钮
 
-    private JTable jTable;
+    private static JTable jTable;
 
     private TableColumn tc1;
     private JScrollPane scrollPane;             //滚动窗格
@@ -50,7 +52,18 @@ public class MangoModMakerClient {
         for (int i = 0; i < 10; i++) {
             Project apx = new Project();
             apx.setProjectNum(String.valueOf(i));
-            apx.setProjectLogo("Resources/48/forge.png");
+
+
+            // ImageIO.read(Images.class.getResourceAsStream(imageName));
+            // BufferedImage
+
+            apx.setProjectLogo("texture/48/forge.png");
+
+
+            //new Image(MangoModMakerClient.class.getResourceAsStream("/Resources/48/forge.png")));
+
+
+            //apx.setProjectLogo("Resources/48/forge.png");
             apx.setProjectPath("地址");
             apx.setProjectName("<html>" + "Forge MOD Project Name " + i + "<br/>" + "E:\\Users" + " <html/>");
             users.add(apx);
@@ -63,9 +76,10 @@ public class MangoModMakerClient {
     public void setLanguage(String lang) {
         Language.init();
         Language.currentLang = lang;
+        LanguageString = lang;
     }
 
-    public void setName(String Name) {
+    public static void setName(String Name) {
         FRAME.setTitle(Name);
     }
 
@@ -78,8 +92,15 @@ public class MangoModMakerClient {
     }
 
 
-    public void UpdateLanguageInit() {
+    public static void UpdateLanguageInit() {
         setName(Language.getTranslationName("title.name") + " v" + MangoModMaker.VERSION);
+
+        NewProjectButton.setText(Language.getTranslationName("button.new_project"));
+        OpenImportProjectButton.setText(Language.getTranslationName("button.open_import_project"));
+        SponsorButton.setText(Language.getTranslationName("button.sponsor"));
+        LogButton.setText(Language.getTranslationName("button.update_log"));
+        MultiLingualButton.setText(Language.getTranslationName("button.multi_lingual"));
+        SetupButton.setText(Language.getTranslationName("button.setup"));
     }
 
 
@@ -167,18 +188,24 @@ public class MangoModMakerClient {
         MultiLingualButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
-
                 LanguageGUI dialog = new LanguageGUI();
-
                 dialog.showLanguageDialog(FRAME, FRAME);
+            }
+        });
 
 
-                //  dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
-                //  dialog.setVisible(true);
+        SponsorButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                WebUrl.OpenWebUrl(MangoModMaker.DONATE_URL);
+            }
+        });
 
 
-                //JOptionPane.showMessageDialog(null, "你好，世界", "信息...", JOptionPane.INFORMATION_MESSAGE);
+        LogButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                WebUrl.OpenWebUrl(MangoModMaker.UPDATE_LOG_URL);
             }
         });
 
@@ -187,10 +214,12 @@ public class MangoModMakerClient {
             @Override
             public void actionPerformed(ActionEvent e) {
                 LanguageGUI lo = new LanguageGUI();
-                JOptionPane.showMessageDialog(null, "你好，世界", "信息...", JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(FRAME, "你好，世界", "信息...", JOptionPane.INFORMATION_MESSAGE);
             }
         });
 
+
+        FRAME.setVisible(true);
     }
 
 

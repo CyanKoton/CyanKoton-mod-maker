@@ -1,0 +1,15 @@
+title.name=マンゴーモジュール製作機
+
+button.new_project=新規プロジェクト
+button.open_import_project=インポート項目を開く
+button.sponsor=賛助する
+button.update_log=ログを更新
+button.multi_lingual=言語
+button.setup=設定
+
+prompt_message=メッセージ
+information=メッセージ
+
+
+
+# 芒果模组制作器

@@ -12,13 +12,12 @@ import java.util.Properties;
 
 public final class Language {
 
-    public static final String EN_UK = "en_uk";
-    public static final String EN_US = "en_us";
-    public static final String ZH_CN = "zh_cn";
     public static String currentLang;
 
 
-    private static final String[] LANGS_STR = {EN_US, ZH_CN, EN_UK};
+    private static final String[] LANGS_STR = {"en_uk", "en_us", "zh_cn", "ja_jp", "lzh"};
+
+
     private static final Map<String, Map<String, String>> LANGS = new HashMap<>(2);
 
     static {
@@ -27,12 +26,11 @@ public final class Language {
         }
     }
 
-
     public static void init() {
         for (Map.Entry<String, Map<String, String>> entry : LANGS.entrySet()) {
             try (InputStream is = Objects.requireNonNull(
                     ClassLoader.getSystemResourceAsStream(
-                            "assets/" + "light" + "/lang/" + entry.getKey() + ".lang"
+                            "assets/" + "mangomodmaker" + "/lang/" + entry.getKey() + ".lang"
                     ));
                  Reader r = new InputStreamReader(is, StandardCharsets.UTF_8)
             ) {
