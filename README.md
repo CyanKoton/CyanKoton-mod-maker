@@ -16,4 +16,4 @@
 - [AdoptOpenJDK](https://adoptopenjdk.net/)：广为人知的免费预建的 OpenJDK
 - [BellSoft Liberica JDK](https://bell-sw.com/pages/downloads/)：带有 JavaFX 的完整 OpenJDK
 
-下载来自网络
+下载来源于网络
