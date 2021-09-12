@@ -9,3 +9,9 @@
 [![License](https://img.shields.io/github/license/mango-studio/mango-mod-maker.svg?colorB=f48041&style=flat-square)](https://github.com/mango-studio/mango-mod-maker/blob/main/LICENSE)
 
 [![Mango Studio/MangoModMaker](https://gitee.com/mango-studio/mango-mod-maker/widgets/widget_card.svg?colors=4183c4,ffffff,ffffff,e3e9ed,666666,9b9b9b)](https://gitee.com/mango-studio/mango-mod-maker)
+
+
+JDK 下载
+* Oracle JDK：官方的 JDK 下载，下载需登录，商业使用受限
+* AdoptOpenJDK：广为人知的免费预建的 OpenJDK
+* BellSoft Liberica JDK：带有 JavaFX 的完整 OpenJDK
