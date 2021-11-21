@@ -16,4 +16,4 @@
 - [AdoptOpenJDK](https://adoptopenjdk.net/)：广为人知的免费预建的 OpenJDK
 - [BellSoft Liberica JDK](https://bell-sw.com/pages/downloads/)：带有 JavaFX 的完整 OpenJDK
 
-JDK 下载分享来源于耗子开发相关资源：https://github.com/Mouse0w0/MinecraftDeveloperGuide (耗子的我的世界中文开发者指南有帮助记得Star)
+JDK 下载分享来源于耗子开发相关资源：https://github.com/Mouse0w0/MinecraftDeveloperGuide#jdk-下载 (耗子的我的世界中文开发者指南有帮助记得Star)
