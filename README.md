@@ -1,5 +1,5 @@
 # Mod-Maker
-一款模组制作器，采用java语言开发。支持跨平台、JavaFx界面漂亮、速度快、插件
+一款模组制作器，采用java语言开发。支持跨平台、JavaFx界面漂亮、速度快、插件...
 
 [![star](https://gitee.com/space-mango/mango-mod-maker/badge/star.svg?theme=dark)](https://gitee.com/mango-studio/mango-mod-maker/stargazers)
 [![fork](https://gitee.com/space-mango/mango-mod-maker/badge/fork.svg?theme=dark)](https://gitee.com/mango-studio/mango-mod-maker/members)
@@ -17,3 +17,4 @@
 - [BellSoft Liberica JDK](https://bell-sw.com/pages/downloads/)：带有 JavaFX 的完整 OpenJDK
 
 JDK 下载分享来源于耗子开发相关资源：https://github.com/Mouse0w0/MinecraftDeveloperGuide#jdk-下载 (耗子的我的世界中文开发者指南有帮助记得Star)
+
